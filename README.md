@@ -6,11 +6,11 @@
 ## Installation
 
 ```sh
-npm install --save-dev @renault-digital/eslint-config
+npm install --save-dev @renault-digital/lint-config
 
 # or
 
-yarn add --dev @renault-digital/eslint-config
+yarn add --dev @renault-digital/lint-config
 ```
 
 Then, [configure ESLint](https://eslint.org/docs/user-guide/configuring) with one or more `.eslintrc.json` files as
@@ -26,7 +26,7 @@ Bellow are some recommended uses:
 
 ```json
 {
-  "extends": "@renault-digital/eslint-config/server"
+  "extends": "@renault-digital/lint-config/server"
 }
 ```
 
@@ -36,7 +36,7 @@ Bellow are some recommended uses:
 
 ```json
 {
-    "test:lint:gherkin" : "gherkin-lint -c node_modules/@renault-digital/eslint-config/gherkin.json"
+    "test:lint:gherkin" : "gherkin-lint -c node_modules/@renault-digital/lint-config/gherkin.json"
 }
 ```
 
@@ -46,7 +46,7 @@ Bellow are some recommended uses:
 
 ```json
 {
-    "test:lint:md" : "markdownlint *.md --config node_modules/@renault-digital/eslint-config/markdownlint.json"
+    "test:lint:md" : "markdownlint *.md --config node_modules/@renault-digital/lint-config/markdownlint.json"
 }
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "@renault-digital/lint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lint config following Renault Digital coding style.",
   "private": false,
   "main": "common.json",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/renault-digital/eslint-config.git"
+    "url": "https://github.com/renault-digital/lint-config.git"
   },
-  "homepage": "https://github.com/renault-digital/eslint-config",
-  "bugs": "https://github.com/renault-digital/eslint-config/issues",
+  "homepage": "https://github.com/renault-digital/lint-config",
+  "bugs": "https://github.com/renault-digital/lint-config/issues",
   "scripts": {
     "test": "yarn test:eslint && yarn test:markdown && yarn test:unit",
     "test:unit": "mocha --recursive tests/**/*.test.js",
