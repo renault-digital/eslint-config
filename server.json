@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "./common.json",
+    "./node.json",
+    "./mocha.json"
+  ]
+}

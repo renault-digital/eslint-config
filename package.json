@@ -1,0 +1,71 @@
+{
+  "name": "@renault-digital/lint-config",
+  "version": "0.0.1",
+  "description": "Lint config following Renault Digital coding style.",
+  "private": false,
+  "main": "common.json",
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renault-digital/eslint-config.git"
+  },
+  "homepage": "https://github.com/renault-digital/eslint-config",
+  "bugs": "https://github.com/renault-digital/eslint-config/issues",
+  "scripts": {
+    "test": "yarn test:eslint && yarn test:markdown && yarn test:unit",
+    "test:unit": "mocha --recursive tests/**/*.test.js",
+    "test:eslint": "eslint --report-unused-disable-directives . --ext .js,.json --ignore-pattern *.fixture.js",
+    "test:markdown": "markdownlint *.md --config markdownlint.json"
+  },
+  "keywords": [
+    "style guide",
+    "eslint",
+    "markdownlint",
+    "gherkinlint",
+    "eslintconfig",
+    "renault digital"
+  ],
+  "files": [
+    "server.json",
+    "common.json",
+    "mocha.json",
+    "node.json",
+    "gherkin.json",
+    "markdownlint.json"
+  ],
+  "contributors": [
+    "Romain DARY <romain.dary@gmail.com>"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test"
+    }
+  },
+  "eslintConfig": {
+    "extends": "./common.json"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-json": "^1.4.0",
+    "gherkin-lint": "^3.3.3",
+    "husky": "^3.0.0",
+    "markdownlint": "^0.15.0",
+    "markdownlint-cli": "^0.17.0",
+    "mocha": "^6.1.4",
+    "should": "^13.2.3"
+  },
+  "peerDependencies": {
+    "eslint": "^5.16.0",
+    "markdownlint": "^0.15.0",
+    "markdownlint-cli": "^0.17.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-json": "^1.4.0",
+    "gherkin-lint": "^3.3.3"
+  }
+}

@@ -1,0 +1,1 @@
+console.log('https://www.google.fr/search?source=hp&ei=-WEjXaKRFM3CgwfQqbW4DQ&q=what+is+the+meaning+of+life&oq=what+is+the+mean&gs_l=psy-ab.3.0.0j0i203l2j0l7.142.31428..32854...27.0..1.1141.11724.23j6j1j2j6-2j6......0....1..gws-wiz.....0..35i39j0i67j0i70i249j0i22i30j0i20i263j0i70i251.2J9JsT03ls0');

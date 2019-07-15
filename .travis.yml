@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '8'
+- '9'
+- '10'
+- '11'
+- '12'
+deploy:
+  provider: npm
+  email: romain.dary@gmail.com
+  api_key:
+    secure: aVB8PhjMgEjw3XIUiXaCLqiDiB/B5Ms+I9y3U1uMOu79HKk217EgdaMDwPXSs34lFjzv8cb0au6SayhwGo30Yhb4I3LuRBaDqc3fA1xk8fRIYXVJZQLE4NrvDCCrBwbn7HsW65+YFBG/fUpIlohdaSxsFjsBZ4L/j0n1bIWjiTyXdwI7DagcW5wHoTpYx3Y/7Fq70UL6hPZobLI80kQmiZRQdOXuCtwQkJeQnRbh3mpnrA7c69u2wBeBm6WhI58YZ9JxhN5+9f8powIW6wSdWaeA9HDDAkcIUp3KmTYBZ12DSSFVlYfQhC/RklmU490CC+MdhC2HhwxB7/bBYAQU5nF9cQjV39ckbU83SDEB/XbouLPAfA9GKZSq+yDLXZ7LFwGFHe7HN4j6RvZ4rqOd1DGp5Rh6tOoOzLeP+96HOHOJLJJl6svdOG3gDSiKAnxn/VzdNqRPCjzChCCZ1uIKunQJEFoj86LbPxQ3AAuGkFr+Ub+QIIbsNhuNhcsepwKF++vc0FJBgDh4Iw1vS7zLzNszLeTu/T8z83NUh0ZVPihpCExVDAKd9him/P+gtB+zm3YyaPjy+sVmxO/Vb+tf3Xw+wpbjX6IBRWo5WxmkmF/+ju8OSPs1oqDaPceM6yj9GYhShc6WUxoCbCvAASqKge7T25iCQnKMoR1jHcP1eqI=
+  on:
+    tags: true
+    repo: renault-digital/eslint-config
