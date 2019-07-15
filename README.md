@@ -1,7 +1,7 @@
 # Renault Digital ESLint config
 
-![Travis (.org)](https://img.shields.io/travis/renault-digital/eslint-config.svg?style=flat-square)
-![npm](https://img.shields.io/npm/v/@renault-digital/eslint-config.svg?style=flat-square)
+![Travis (.org)](https://img.shields.io/travis/renault-digital/lint-config.svg?style=flat-square)
+![npm](https://img.shields.io/npm/v/@renault-digital/lint-config.svg?style=flat-square)
 
 ## Installation
 
