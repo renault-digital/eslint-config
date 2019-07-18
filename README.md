@@ -1,24 +1,56 @@
 # Renault Digital ESLint config
 
-![Travis (.org)](https://img.shields.io/travis/renault-digital/eslint-config.svg?style=flat-square)
-![npm](https://img.shields.io/npm/v/@renault-digital/eslint-config.svg?style=flat-square)
+[![Build Status](https://img.shields.io/travis/renault-digital/eslint-config.svg)](https://travis-ci.org/renault-digital/eslint-config)
+[![Npm Version](https://img.shields.io/npm/v/@renault-digital/eslint-config.svg)](https://www.npmjs.com/package/@renault-digital/eslint-config)
+
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Examples](#Examples)
+- [Contribute](#Contribute)
 
 ## Installation
 
+Using `npm` :
+
 ```sh
 npm install --save-dev @renault-digital/eslint-config
+```
 
-# or
+Or using `yarn` :
 
+```sh
 yarn add --dev @renault-digital/eslint-config
 ```
 
-Then, [configure ESLint](https://eslint.org/docs/user-guide/configuring) with one or more `.eslintrc.json` files as
-appropriate.
+## Usage
 
-## Example configurations
+Please follow [configure ESLint](https://eslint.org/docs/user-guide/configuring) for configuration.
 
-Bellow are some recommended uses.
+The follow rules are available (you can combine them) :
+
+- `@renault-digital` : General JS rules
+- `@renault-digital/common` : Same as above
+- `@renault-digital/node` : Rules specific to NodeJS
+- `@renault-digital/mocha` : Rules specific to Mocha
+- `@renault-digital/server` : Group of rules for NodeJS application
+
+A basic usage will be in a file `.eslintrc.json`:
+
+```json
+{
+  "extends": "@renault-digital/eslint-config"
+}
+```
+
+And after :
+
+```sh
+yarn eslint .
+```
+
+## Examples
+
+Bellow are some recommended usage.
 
 ### A common usage
 
@@ -40,10 +72,12 @@ Bellow are some recommended uses.
 }
 ```
 
-## Proposing changes
+## Contribute
+
+### Proposing changes
 
 Major changes should be discussed GitHub.
 
-## Semver policy
+### Semver policy
 
 Same approach as in ESLint, see [Semantic Versioning Policy](https://github.com/eslint/eslint#user-content-semantic-versioning-policy).
