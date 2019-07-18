@@ -3,10 +3,10 @@
 [![Build Status](https://img.shields.io/travis/renault-digital/eslint-config.svg)](https://travis-ci.org/renault-digital/eslint-config)
 [![Npm Version](https://img.shields.io/npm/v/@renault-digital/eslint-config.svg)](https://www.npmjs.com/package/@renault-digital/eslint-config)
 
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Examples](#Examples)
-- [Contribute](#Contribute)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Contribute](#contribute)
 
 ## Installation
 
