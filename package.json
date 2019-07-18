@@ -1,6 +1,6 @@
 {
   "name": "@renault-digital/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Eslint config that follow Renault Digital coding style.",
   "private": false,
   "main": "common.json",
