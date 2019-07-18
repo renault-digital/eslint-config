@@ -1,16 +1,16 @@
 # Renault Digital ESLint config
 
-![Travis (.org)](https://img.shields.io/travis/renault-digital/lint-config.svg?style=flat-square)
-![npm](https://img.shields.io/npm/v/@renault-digital/lint-config.svg?style=flat-square)
+![Travis (.org)](https://img.shields.io/travis/renault-digital/eslint-config.svg?style=flat-square)
+![npm](https://img.shields.io/npm/v/@renault-digital/eslint-config.svg?style=flat-square)
 
 ## Installation
 
 ```sh
-npm install --save-dev @renault-digital/lint-config
+npm install --save-dev @renault-digital/eslint-config
 
 # or
 
-yarn add --dev @renault-digital/lint-config
+yarn add --dev @renault-digital/eslint-config
 ```
 
 Then, [configure ESLint](https://eslint.org/docs/user-guide/configuring) with one or more `.eslintrc.json` files as
@@ -18,7 +18,17 @@ appropriate.
 
 ## Example configurations
 
-Bellow are some recommended uses:
+Bellow are some recommended uses.
+
+### A common usage
+
+`.eslintrc.json`:
+
+```json
+{
+  "extends": "@renault-digital/eslint-config"
+}
+```
 
 ### A typical Server project with NodeJS and Mocha tests
 
@@ -26,27 +36,7 @@ Bellow are some recommended uses:
 
 ```json
 {
-  "extends": "@renault-digital/lint-config/server"
-}
-```
-
-### Lint your Gherkin features
-
-`package.json` :
-
-```json
-{
-    "test:lint:gherkin" : "gherkin-lint -c node_modules/@renault-digital/lint-config/gherkin.json"
-}
-```
-
-### Lint your Markdown
-
-`package.json` :
-
-```json
-{
-    "test:lint:md" : "markdownlint *.md --config node_modules/@renault-digital/lint-config/markdownlint.json"
+  "extends": "@renault-digital/eslint-config/server"
 }
 ```
 
